@@ -53,7 +53,6 @@
             <option value="Masculino">Masculino</option>
             <option value="Feminino">Feminino</option>
             <option value="Nao-informar">Prefiro não informar</option>
-            <!-- Adicione mais opções conforme necessário -->
         </select><br><br>
 
         <label for="foto">Foto:</label>
@@ -64,7 +63,7 @@
 
     <script>
     function getAddressByCEP(cep) {
-        cep = cep.replace(/\D/g, ''); // Remove caracteres não numéricos
+        cep = cep.replace(/\D/g, ''); 
 
         if (cep.length !== 8) {
             return;
@@ -73,7 +72,6 @@
         // URL da API ViaCEP
         const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
 
-        // Requisição HTTP usando Fetch API
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
@@ -90,7 +88,6 @@
 
     <script>
         $(function() {
-            // Defina o idioma padrão para português (Brasil)
             $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
 
             $("#data_nascimento").datepicker({

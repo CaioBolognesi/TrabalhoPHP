@@ -47,14 +47,12 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Optional: Add some responsive styles */
 @media screen and (max-width: 600px) {
     form {
         margin: 20px 10px;
     }
 }
 
-/* Estilo para o <select> */
 .select-style {
     width: calc(100% - 16px);
     padding: 8px;
@@ -66,7 +64,6 @@ input[type="submit"]:hover {
     color: #333;
 }
 
-/* Estilo para o <select> quando em foco */
 .select-style:focus {
     border-color: rgb(83, 83, 83);
 }
